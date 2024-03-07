@@ -29,11 +29,4 @@ public class KafkaAdminConfig {
                 TopicBuilder.name("str-topic").partitions(2).replicas(1).build()
         );
     }
-
-    @Bean
-    public KafkaAdmin.NewTopics topics2(){
-        return new KafkaAdmin.NewTopics(
-                TopicBuilder.name("str-topic2").partitions(2).replicas(1).build()
-        );
-    }
 }
